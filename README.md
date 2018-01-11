@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/harshildarji/location_based_cryptography.svg?branch=master)](https://travis-ci.org/H-Darji/location_based_cryptography)
+[![Build Status](https://travis-ci.org/harshildarji/location_based_cryptography.svg?branch=master)](https://travis-ci.org/harshildarji/location_based_cryptography)
 ## Output
 > **Encryption:**
 ```
