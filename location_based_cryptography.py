@@ -1,4 +1,5 @@
 # Location Based Cryptography
+# https://www.ijert.org/browse/volume-7-2018/january-2018-edition?download=17650:location-based-cryptography
 
 import geocoder, hashlib
 
