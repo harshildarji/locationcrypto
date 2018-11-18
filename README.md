@@ -1,5 +1,4 @@
 ## Location Based Cryptography
-- Paper: [IJERTV7IS010084](https://www.ijert.org/browse/volume-7-2018/january-2018-edition?download=17650:location-based-cryptography)
 > **Output**
 - Encryption:
 ```
