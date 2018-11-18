@@ -1,5 +1,4 @@
 ## Location Based Cryptography
-> **Output**
 - Encryption:
 ```
 Waiting for location...
