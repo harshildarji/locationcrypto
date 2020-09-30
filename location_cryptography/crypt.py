@@ -53,5 +53,5 @@ def translateMessage(key, message, mode):
             translated.append(symbol)
     return ''.join(translated)
 
-if __name__ == '__main__':
-    main()
+#if __name__ == '__main__':
+main()
