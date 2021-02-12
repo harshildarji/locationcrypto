@@ -5,7 +5,7 @@ Location based cryptography uses location of the device in addition to pass-phra
 
 #### Install:
 ```bash
-pip install locationcrypto==1.0.1
+pip install locationcrypto
 ```
 
 #### Use:
