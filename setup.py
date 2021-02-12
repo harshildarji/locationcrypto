@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="locationcrypto",
-    version="1.0.1",
+    version="1.0.3",
     author="Harshil Darji",
     author_email="darjiharshil2994@gmail.com",
     description="Location based Cryptography uses location of the device in addition to the pass-phrase as key.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/harshildarji/location_based_cryptography",
+    url="https://github.com/harshildarji/locationcrypto",
     packages=setuptools.find_packages(),
     install_requires=['geocoder'],
     classifiers=[
