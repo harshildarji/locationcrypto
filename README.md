@@ -1,4 +1,5 @@
 ### Location-based Cryptography
+[![PyPI version](https://badge.fury.io/py/locationcrypto.svg)](https://badge.fury.io/py/locationcrypto)
 
 Location based cryptography uses location of the device in addition to pass-phrase as encryption/decryption key.
 
