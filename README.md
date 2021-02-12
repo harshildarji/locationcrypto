@@ -1,4 +1,7 @@
-## Location Based Cryptography
+## Location-based Cryptography
+
+Location based cryptography uses location of the device in addition to pass-phrase as encryption/decryption key.
+
 - Encryption:
 ```
 Waiting for location...
