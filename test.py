@@ -1,3 +1,3 @@
-from location_cryptography import crypt
+from loccrypto import crypt
 
 crypt

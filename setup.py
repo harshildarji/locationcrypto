@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="location-cryptography",
+    name="loccrypto",
     version="1.0.0",
     author="Harshil Darji",
     author_email="darjiharshil2994@gmail.com",

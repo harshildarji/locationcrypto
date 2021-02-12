@@ -1,6 +1,6 @@
 # Location Based Cryptography
 
-import geocoder, hashlib
+import geocoder, hashlib, sys
 
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
@@ -18,7 +18,7 @@ def main():
         mode = 'decrypt'
         translated = decryptMessage(key, message)
     print(translated)
-    input()
+    quit()
 
 def encryptMessage(key, message):
     return translateMessage(key, message, 'encrypt')
