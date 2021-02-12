@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="locationcrypto",
-    version="1.0.3",
+    version="1.0.4",
     author="Harshil Darji",
     author_email="darjiharshil2994@gmail.com",
     description="Location based Cryptography uses location of the device in addition to the pass-phrase as key.",
