@@ -1,20 +1,38 @@
-## Location-based Cryptography
+### Location-based Cryptography
 
 Location based cryptography uses location of the device in addition to pass-phrase as encryption/decryption key.
 
-- Encryption:
+#### Install:
+```bash
+pip install locationcrypto==1.0.1
 ```
+
+#### Use:
+Create a python script, for example **`example.py`**:
+```python
+import locationcrypto.crypt
+
+crypt
+```
+Save and run:
+```bash
+❯❯❯ python3 example.py
 Waiting for location...
 Password: test
-Data: this is for test purpose
+Data: Harshil
 Encrypt/Decrypt [e/d]: e
-yijr hr ept sdrs ttqunri
+Jevujhk
 ```
-- Decryption:
-```
+```bash
+❯❯❯ python3 example.py
 Waiting for location...
 Password: test
-Data: yijr hr ept sdrs ttqunri
+Data: Jevujhk
 Encrypt/Decrypt [e/d]: d
-this is for test purpose
+Harshil
 ```
+
+---
+#### Author: [Harshil Darji](https://github.com/harshildarji)
+
+Thanks to [Atharv Attri](https://github.com/Atharv-Attri) for helping me publish this repository as a package.

@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="loccrypto",
-    version="1.0.0",
+    name="locationcrypto",
+    version="1.0.1",
     author="Harshil Darji",
     author_email="darjiharshil2994@gmail.com",
     description="Location based Cryptography uses location of the device in addition to the pass-phrase as key.",
@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/harshildarji/location_based_cryptography",
     packages=setuptools.find_packages(),
+    install_requires=['geocoder'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
