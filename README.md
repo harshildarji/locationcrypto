@@ -1,4 +1,4 @@
-### Location-based Cryptography
+# Location-based Cryptography
 #### Package published at: [PyPI](https://pypi.org/project/locationcrypto/)
 
 Location based cryptography uses location of the device in addition to pass-phrase as encryption/decryption key.
