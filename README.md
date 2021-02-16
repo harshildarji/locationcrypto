@@ -14,26 +14,21 @@ pip install locationcrypto
 #### Use:
 Create a python script, for example **`example.py`**:
 ```python
-import locationcrypto.crypt
+from locationcrypto import crypt
 
-crypt
+# To encrypt:
+encryption = crypt.encrypt(plain_text='Harshil', key='test')
+print(f'Encryption: {encryption}')
+
+# To decrypt:
+decryption = crypt.decrypt(encrypted_text=encryption, key='test')
+print(f'Decryption: {decryption}')
 ```
 Save and run:
 ```bash
 ❯❯❯ python3 example.py
-Waiting for location...
-Password: test
-Data: Harshil
-Encrypt/Decrypt [e/d]: e
-Jevujhk
-```
-```bash
-❯❯❯ python3 example.py
-Waiting for location...
-Password: test
-Data: Jevujhk
-Encrypt/Decrypt [e/d]: d
-Harshil
+Encryption: Jevujhk
+Decryption: Harshil
 ```
 
 ---

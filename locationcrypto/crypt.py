@@ -2,29 +2,20 @@
 
 import geocoder, hashlib
 
-LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-def main():
-    print('Waiting for location...')
-    location = ''.join(map(str, geocoder.ip('me').latlng))
-    key = hashlib.md5((input('Password: ')+location).encode('utf-8')).hexdigest()
-    message = input('Data: ')
-    mode = input('Encrypt/Decrypt [e/d]: ')
 
-    if mode.lower().startswith('e'):
-        mode = 'encrypt'
-        translated = encryptMessage(key, message)
-    elif mode.lower().startswith('d'):
-        mode = 'decrypt'
-        translated = decryptMessage(key, message)
-    print(translated)
-    exit()
+def encrypt(plain_text: str, key: str):
+    location = "".join(map(str, geocoder.ip("me").latlng))
+    key = hashlib.md5((key + location).encode("utf-8")).hexdigest()
+    return translateMessage(key, plain_text, "encrypt")
 
-def encryptMessage(key, message):
-    return translateMessage(key, message, 'encrypt')
 
-def decryptMessage(key, message):
-    return translateMessage(key, message, 'decrypt')
+def decrypt(encrypted_text: str, key: str):
+    location = "".join(map(str, geocoder.ip("me").latlng))
+    key = hashlib.md5((key + location).encode("utf-8")).hexdigest()
+    return translateMessage(key, encrypted_text, "decrypt")
+
 
 def translateMessage(key, message, mode):
     translated = []
@@ -34,9 +25,9 @@ def translateMessage(key, message, mode):
     for symbol in message:
         num = LETTERS.find(symbol.upper())
         if num != -1:
-            if mode == 'encrypt':
+            if mode == "encrypt":
                 num += LETTERS.find(key[keyIndex])
-            elif mode == 'decrypt':
+            elif mode == "decrypt":
                 num -= LETTERS.find(key[keyIndex])
 
             num %= len(LETTERS)
@@ -51,7 +42,4 @@ def translateMessage(key, message, mode):
                 keyIndex = 0
         else:
             translated.append(symbol)
-    return ''.join(translated)
-
-#if __name__ == '__main__':
-main()
+    return "".join(translated)
